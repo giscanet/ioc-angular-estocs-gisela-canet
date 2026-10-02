@@ -1,59 +1,49 @@
-# IocAngularEstocsGiselaCanet
+# Nom de l'aplicació: Gestor d'estocs
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.0.
+## Autor/a
 
-## Development server
+Gisela Canet Agramunt
 
-To start a local development server, run:
+## Descripció
 
-```bash
-ng serve
-```
+Aplicació per gestionar productes i estocs.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Versions utilitzades
 
-## Code scaffolding
+- **Node.js:** 24.15.0
+- **npm:** 11.12.1
+- **Angular CLI:** 22.2.0
+- **Git:** 2.43.0
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Com crear i executar el projecte
 
-```bash
-ng generate component component-name
-```
+1. Instal·lar Git, Node.js i Angular CLI.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Descarregar o clonar el projecte des del repositori:
+   [https://github.com/giscanet/ioc-angular-estocs-gisela-canet](https://github.com/giscanet/ioc-angular-estocs-gisela-canet)
 
-```bash
-ng generate --help
-```
+3. Accedir a la carpeta del projecte.
 
-## Building
+4. Instal·lar les dependències del projecte:
 
-To build the project run:
+   ```bash
+   npm install
+   ```
 
-```bash
-ng build
-```
+5. Executar l'aplicació en mode desenvolupament:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+   ```bash
+   ng serve
+   ```
 
-## Running unit tests
+6. Obrir el navegador i accedir a:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+   [http://localhost:4200/](http://localhost:4200/).
 
-```bash
-ng test
-```
+## Estat de l'EAC1
 
-## Running end-to-end tests
+EAC1 finalitzat.
 
-For end-to-end (e2e) testing, run:
+## Enllaç del repositori
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[https://github.com/giscanet/ioc-angular-estocs-gisela-canet](https://github.com/giscanet/ioc-angular-estocs-gisela-canet)

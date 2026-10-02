@@ -1,0 +1,52 @@
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.titol {
+  margin: 0;
+}
+
+.alumnefinalitat {
+  width: 400px;
+  margin: 20px 0;
+  padding: 15px 0;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.targeta {
+  width: 500px;
+  padding: 20px;
+  border: 4px double blue;
+  border-radius: 8px;
+  box-shadow: 6px 6px 12px grey;
+  text-align: center;
+  color: blue;
+  background-color: lightblue;
+}
+
+.targeta p {
+  margin: 10px 0;
+}
+
+.nota {
+  width: 500px;
+  margin-top: 25px;
+  padding: 15px;
+  border-left: 4px solid grey;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.tobligatori {
+  margin-top: 25px;
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid lightgrey;
+}
