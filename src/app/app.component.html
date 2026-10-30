@@ -1,27 +1,45 @@
-<!-- * * * * * * * * * * * * * EAC 1 * * * * * * * * * * * * * -->
-<main class="principal">
+<a class="enllac-salt" href="#contingut-principal"> Salta al contingut principal </a>
+<main id="contingut-principal" class="principal">
   <h1 class="titol">{{ appName }}</h1>
 
   <p class="alumnefinalitat">
-    Gisela Canet Agramunt<br>
+    Gisela Canet Agramunt<br />
     Aplicació per gestionar productes i estocs.
   </p>
 
-  <section class="targeta">
-    <h2>Dades bàsiques del projecte</h2>
-    <p><strong>Mòdul:</strong> OA01 - Programació Avançada</p>
-    <p><strong>Framework:</strong> Angular</p>
-    <p><strong>Data d'inici:</strong> 22/09/2026</p>
+  <section class="targeta introduccio">
+    <h2>Productes</h2>
+    <p>Consulta els productes disponibles i filtra'ls per nom o categoria.</p>
   </section>
 
-  <aside class="nota">
-    APLICACIÓ EN DESENVOLUPAMENT
-  </aside>
+  <app-filtres-productes (filtresCanviats)="aplicaFiltres($event)"> </app-filtres-productes>
 
+  <p class="comptador">Resultats: {{ productesFiltrats.length }}</p>
+
+  <app-llista-productes
+    [productes]="productesFiltrats"
+    [producteSeleccionatId]="producteSeleccionat?.id"
+    (selecciona)="seleccionaProducte($event)"
+  >
+  </app-llista-productes>
+
+  @if (producteSeleccionat) {
+    <section class="targeta detall">
+      <h2>Detall del producte seleccionat</h2>
+      <p><strong>Nom:</strong> {{ producteSeleccionat.nom }}</p>
+      <p><strong>Categoria:</strong> {{ producteSeleccionat.categoria }}</p>
+      <p><strong>Descripció:</strong> {{ producteSeleccionat.descripcio }}</p>
+      <p><strong>Estoc:</strong> {{ producteSeleccionat.estoc }} unitats</p>
+    </section>
+  } @else {
+    @if (productesFiltrats.length > 0) {
+      <p class="nota-detall">Clica el botó "Veure detall" per veure el detall d'un producte.</p>
+    }
+  }
+
+  <aside class="nota">APLICACIÓ EN DESENVOLUPAMENT</aside>
 </main>
 
-<footer class="tobligatori">
-  Projecte base llest
-</footer>
+<footer class="tobligatori">Gestor d'estocs · EAC2</footer>
 
 <router-outlet />

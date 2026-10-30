@@ -1,0 +1,14 @@
+<article class="targeta" [class.seleccionada]="seleccionat">
+  <header class="targeta-capcalera">
+    <app-etiqueta-producte [categoria]="producte.categoria" [destacat]="producte.destacat ?? false">
+    </app-etiqueta-producte>
+
+    <time [attr.datetime]="producte.dataActualitzacio">
+      {{ producte.dataActualitzacio | date: 'dd/MM/yyyy' }}
+    </time>
+  </header>
+
+  <h3>{{ producte.nom }}</h3>
+
+  <button type="button" (click)="avisaSeleccio()">Veure detall</button>
+</article>

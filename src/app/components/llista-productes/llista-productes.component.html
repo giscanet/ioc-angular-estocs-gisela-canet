@@ -1,0 +1,12 @@
+<section class="graella" aria-label="Llistat de productes">
+  @for (producte of productes; track producte.id) {
+    <app-targeta-producte
+      [producte]="producte"
+      [seleccionat]="producte.id === producteSeleccionatId"
+      (selecciona)="propagaSeleccio($event)"
+    >
+    </app-targeta-producte>
+  } @empty {
+    <p class="missatge-buit" role="status">No hi ha productes per mostrar.</p>
+  }
+</section>

@@ -1,8 +1,10 @@
 .principal {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 900px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 30px;
   text-align: center;
@@ -13,15 +15,22 @@
 }
 
 .alumnefinalitat {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  align-self: center;
   margin: 20px 0;
   padding: 15px 0;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  text-align: center;
 }
 
 .targeta {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  align-self: center;
   padding: 20px;
   border: 4px double blue;
   border-radius: 8px;
@@ -36,7 +45,10 @@
 }
 
 .nota {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  align-self: center;
   margin-top: 25px;
   padding: 15px;
   border-left: 4px solid grey;
@@ -49,4 +61,47 @@
   padding: 15px;
   text-align: center;
   border-top: 1px solid lightgrey;
+}
+
+.detall {
+  margin-top: 30px;
+}
+
+.introduccio {
+  margin-bottom: 25px;
+}
+
+.comptador {
+  text-align: left;
+  font-weight: bold;
+  margin: 20px 20px;
+}
+
+.nota-detall {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  align-self: center;
+  margin-top: 25px;
+  padding: 15px;
+  color: blue;
+  border-left: 4px solid blue;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.enllac-salt {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  padding: 10px;
+  background-color: white;
+  color: blue;
+  z-index: 1000;
+}
+
+.enllac-salt:focus-visible {
+  top: 10px;
+  outline: 3px solid blue;
+  outline-offset: 3px;
 }
